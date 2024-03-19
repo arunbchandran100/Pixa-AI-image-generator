@@ -7,20 +7,14 @@ import photo4 from "./assets/images/photo4.jpg";
 
 interface PhotoOptionProps {
   photo: string;
-  onSelect: () => void;
-  onUpload: () => void;
 }
 
-const PhotoOption: React.FC<PhotoOptionProps> = ({
-  photo,
-  onSelect,
-  onUpload,
-}) => {
+const PhotoOption: React.FC<PhotoOptionProps> = ({ photo }) => {
   return (
-    <div>
+    <div className="photo-option">
+      {" "}
+      {/* Apply photo-option class */}
       <img src={photo} alt="Photo" />
-      <button onClick={onSelect}>Select</button>
-      <button onClick={onUpload}>Upload Your Photo</button>
     </div>
   );
 };
@@ -47,14 +41,17 @@ function Home() {
       <div className="photo-options-container">
         {/* Map over photos and render PhotoOption for each photo */}
         {photos.map((photo, index) => (
-          <PhotoOption
-            key={index}
-            photo={photo}
-            onSelect={() => {} /* Implement your onSelect logic here */}
-            onUpload={() => {} /* Implement your onUpload logic here */}
-          />
+          <PhotoOption key={index} photo={photo} />
         ))}
       </div>
+
+      {/* Footer */}
+      <footer className="footer">
+        <div>About</div>
+        <div>Services</div>
+        <div>Contact</div>
+        {/* Add other basic things */}
+      </footer>
     </div>
   );
 }
