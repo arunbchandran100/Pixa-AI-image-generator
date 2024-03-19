@@ -4,19 +4,22 @@ import photo1 from './assets/images/photo1.jpg';
 import photo2 from './assets/images/photo2.jpg';
 import photo3 from './assets/images/photo3.jpg';
 import photo4 from './assets/images/photo4.jpg';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate instead of useHistory
 
 interface PhotoOptionProps {
   photo: string;
-  onSelect: () => void;
-  onUpload: () => void;
 }
 
-const PhotoOption: React.FC<PhotoOptionProps> = ({ photo, onSelect, onUpload }) => {
+const PhotoOption: React.FC<PhotoOptionProps> = ({ photo }) => {
+  const navigate = useNavigate(); // Use useNavigate hook
+
+  const handleClick = () => {
+    navigate('/upload'); // Use navigate function to navigate to '/upload'
+  };
+
   return (
-    <div className="photo-option"> {/* Apply photo-option class */}
+    <div className="photo-option" onClick={handleClick}>
       <img src={photo} alt="Photo" />
-      <button onClick={onSelect}>Select</button>
-      <button onClick={onUpload}>Upload Your Photo</button>
     </div>
   );
 }
@@ -41,12 +44,7 @@ function Home() {
       <div className="photo-options-container">
         {/* Map over photos and render PhotoOption for each photo */}
         {photos.map((photo, index) => (
-          <PhotoOption
-            key={index}
-            photo={photo}
-            onSelect={() => {} /* Implement your onSelect logic here */}
-            onUpload={() => {} /* Implement your onUpload logic here */}
-          />
+          <PhotoOption key={index} photo={photo} />
         ))}
       </div>
     </div>
