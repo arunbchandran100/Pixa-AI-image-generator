@@ -1,0 +1,53 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .photo-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .photo-option {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .photo-container {
+    position: relative;
+  }
+  
+  .photo-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .upload-button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
