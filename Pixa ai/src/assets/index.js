@@ -1,7 +1,7 @@
 import airbnb from "./airbnb.png";
 import bill from "./bill.png";
 import binance from "./binance.png";
-import card from "./card.png";
+import card from "./1st card.png";
 import coinbase from "./coinbase.png";
 import dropbox from "./dropbox.png";
 import logo from "./logo.svg";
