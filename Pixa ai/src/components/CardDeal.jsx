@@ -14,7 +14,9 @@ const CardDeal = () => (
       photos to life with stunning edits in ust a few clicks."
       </p>
 
-      <Button styles={`mt-10`} />
+      <a href="https://play.google.com/store/apps/details?id=com.genai.aiphotoeditor" target="_blank" rel="noopener noreferrer">
+        <Button styles={`mt-10`} />
+      </a>
     </div>
 
     <div className={layout.sectionImg}>
