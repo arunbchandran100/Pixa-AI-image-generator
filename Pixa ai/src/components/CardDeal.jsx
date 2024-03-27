@@ -10,8 +10,8 @@ const CardDeal = () => (
         steps.
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Arcu tortor, purus in mattis at sed integer faucibus. Aliquet quis
-        aliquet eget mauris tortor.ç Aliquet ultrices ac, ametau.
+      "Simply select a style,and watch as our AI-powered tool brings your 
+      photos to life with stunning edits in ust a few clicks."
       </p>
 
       <Button styles={`mt-10`} />
