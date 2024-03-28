@@ -14,7 +14,7 @@ const Billing = () => (
 
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
-        Easily control your <br className="sm:block hidden" /> Photos
+        Easily edit your <br className="sm:block hidden" /> Photos
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
         Transform your photos with ease using Pixa AI's intuitive editing features. 
