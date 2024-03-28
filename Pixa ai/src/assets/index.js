@@ -1,10 +1,10 @@
 import airbnb from "./airbnb.png";
-import bill from "./bill.png";
+import bill from "./Untitled design (1).png";
 import binance from "./binance.png";
 import card from "./1st card.png";
 import coinbase from "./coinbase.png";
 import dropbox from "./dropbox.png";
-import logo from "./logo.svg";
+import logo from "./cropped-logorexa.png";
 import quotes from "./quotes.svg";
 import robot from "./robot.png";
 import send from "./Send.svg";
